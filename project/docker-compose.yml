@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  test_web: 
+    build: .
+    container_name: test_container
+    restart: always
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./:/project
